@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap')
+$primary: #ffffff
+$Hfont: 'Montserrat', sans-serif
+$bg: #E2E2E2
+
+
+.promotional-offer
+    position: absolute
+    width: 100%
+    right: 0
+    height: 100%
+    top: 10%
+    color: $primary
+    background: transparent
+    pointer-events: none
+    z-index: 2
+    
+
+.carousel .thumbs-wrapper
+    display: none   
+.slider-wrapper
+    height: 340px
+.promotional-offer-text-center 
+    position: absolute
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 0 5%
+    text-align: center
+
+.promotional-offer-text 
+    // line-height: 60px
+    font-style: normal
+    font-weight: 500
+    font-size: 20px
+    letter-spacing: 1px
+    width: 60%
+    margin: 0 auto
+    // white-space: nowrap
+
+
+
+@media (max-width: 320px)
+    .promotional-offer-subtitle
+        font-size: 12px
+        line-height: 15px
+
+    .promotional-offer-text
+        font-size: 16px
+        line-height: 1
+    .carousel-promotional-offer img
+        height: 40vh
+    .carousel .thumbs
+        padding: 0
+  
+@media (max-width: 640px) and (min-width: 321px)
+    .promotional-offer-subtitle
+        font-size: 14px
+        line-height: 17px
+
+    .promotional-offer-text
+        font-size: 12px
+        line-height: 2
+
+@media (max-width: 991px) and (min-width: 641px) 
+    .promotional-offer-subtitle
+        font-size: 14px
+        line-height: 17px
+
+    .promotional-offer-text
+        font-size: 30px
+        line-height: 0
